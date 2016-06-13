@@ -15,11 +15,11 @@
         <fieldset>
             <legend>Projeto</legend>
             
-            <div>
+            <div class="center-field">
                 <form method="POST">
                     <label>Nome do Projeto:  </label>
-                    <input type="text" name="projectname">
-                    <input type="submit" name="addproject" value="Adicionar" class="buttonform">
+                    <input id="project-name" type="text" name="projectname">
+                    <input id="btn" type="submit" required='required' name="addproject" value="Adicionar" class="buttonform" >
                 </form>
             </div>      
         </fieldset>
@@ -27,8 +27,11 @@
     
     <p>
         <fieldset>
-            <legend>Tarefas</legend>    
+            <legend>Tarefas</legend>
+            <ul id="list-projects">
+            </ul>
         </fieldset>
     </p>
+    <script type="text/javascript" src="js/functions.js"></script>
 </body>
 </html>
